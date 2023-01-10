@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- priority
+Specificity
+1. !important
+2.inline
+3.id
+4.class
+5.tag 
+important>inline>id>class>tag
+-->
+    <style>
+      #third {
+        color: magenta;
+      }
+      .fire {
+        color: rgba(214, 26, 26, 0.795);
+      }
+      h1 {
+        color: blueviolet;
+      }
+      h1 {
+        color: peru !important;
+        color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>My special heading-1</h1>
+    <h1>My special heading-2</h1>
+    <h1 style="color: olivedrab" class="fire" id="third">
+      My special heading-3
+    </h1>
+    <h1>My special heading-4</h1>
+  </body>
+</html>
